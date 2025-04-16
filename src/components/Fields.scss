@@ -1,0 +1,37 @@
+.fields-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.fields-container h1 {
+  font-size: 7rem;
+  line-height: 9rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .fields-container h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 580px) {
+  .fields-container h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 769px) {
+  .fields-container h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 990px) {
+  .fields-container h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
