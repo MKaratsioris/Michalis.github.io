@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- HEAD -->
+    <head>
+        <!-- META -->
+                <meta charset="utf-8">
+                <!-- Ensures proper rendering of text, especially non-ASCII characters. -->
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <!-- Appears in search engine snippets. Important for SEO and click-through rates. -->
+                <meta name="description" content="Michalis Karatsioris - Portfolio">
+                <meta name="author" content="Michalis Karatsioris">
+                <!-- Changes the browser’s address bar color on mobile devices. -->
+                <meta name="theme-color" content="#2c2c6c">
+                <!-- Makes the website responsive on mobile devices. -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- Controls whether the page is indexed and whether links are followed. -->
+                <meta name="robots" content="index, follow">
+                <!-- Open Graph Tags (for social media sharing like Facebook, LinkedIn). When someone shares your portfolio or blog on Facebook or LinkedIn, these 
+                tags control what shows up in the preview — instead of Facebook guessing. -->
+                <!-- Sets the title that appears in the link preview. -->
+                <meta property="og:title" content="Michalis Karatsioris">
+                <!-- Sets the thumbnail image shown in the preview. -->
+                <meta property="og:image" content="./assets/img/favicon/favicon_rubik_moonrocks/android-chrome-512x512.png">
+                <!-- This is what users will read under the title in a social media preview. -->
+                <meta property="og:description" content="Michalis Karatsioris - Portfolio">
+                <!-- Specifies the canonical URL of the page. -->
+                <meta property="og:url" content="https://www.michaliskaratsioris.com">
+                <meta property="og:type" content="website">
+        
+        <!-- FAVICON -->
+                <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+                <!-- This icon is used when users save your web app to their iOS device home screen. -->
+                <link rel="apple-touch-icon" sizes="180x180" href="./media/apple-touch-icon.png">
+                <!-- Used by most modern browsers in tabs, bookmarks, and shortcuts. -->
+                <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
+                <!-- This is a fallback for smaller displays, toolbars, or browser UIs that require small icons. -->
+                <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
+                <!-- The Web App Manifest provides metadata like name, icons, theme color, and display mode. Required for Progressive Web App (PWA) features and some Android "Add to Home Screen" functionality. -->
+                <link rel="manifest" href="./media/site.webmanifest">
+                
+        <!-- STYLING -->
+                <!-- Custom CSS -->
+                <link rel="stylesheet" href="./css/index.css">
+
+        <!-- TITLE -->
+                <title>MK | Portfolio</title>
+    </head>
+<!-- BODY -->
+    <body>
+        <!-- HEADER -->
+                <header>
+                    <div class="container navbar">
+                        <div class="logo">
+                            <a href="#home" aria-current="page">
+                                <img src="./media/android-chrome-512x512.png" alt="Logo">
+                            </a>
+                        </div>
+                        <nav class="destop-navbar">
+                            <ul>
+                                <a href="#home" aria-current="page">
+                                    <li>
+                                        Home<i class="fa-solid fa-house"></i>
+                                    </li>
+                                </a>
+                                <a href="#about" aria-current="page">
+                                    <li>
+                                        About<i class="fa-solid fa-user"></i>
+                                    </li>
+                                </a>
+                                <a href="#projects" aria-current="page">
+                                    <li>
+                                        Projects<i class="fa-solid fa-code"></i>
+                                    </li>
+                                </a>
+                                <a href="#contact" class="btn" aria-current="page">
+                                    Contact
+                                </a>
+                            </ul>
+                        </nav>
+                        <nav class="mobile-navbar">
+                            <div onclick="show()">
+                                <button class="hamburger">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </div>
+                            <ul class="mobile-hamburger" id="mobile-hamburger">
+                                <a href="#home" aria-current="page">
+                                    <li>Home</li>
+                                </a>
+                                <a href="#about" aria-current="page">
+                                    <li>About</li>
+                                </a>
+                                <a href="#projects" aria-current="page">
+                                    <li>Projects</li>
+                                </a>
+                                <a href="#contact" class="btn" aria-current="page">
+                                    Contact
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+        <!-- MAIN -->
+                <main>
+                <!-- HOME -->
+                        <section class="home" id="home">
+                            <div class="container home-section">
+                                <img src="./media/my-avatar.png" alt="My avatar">
+                                <div class="home-text">
+                                    <p class="greeting">Hello World! I am</p>
+                                    <p class="name">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                        Michalis
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </p>
+                                </div>
+                                <div class="home-skills">
+                                    <i class="fa-brands fa-python"></i>
+                                    <i class="fa-solid fa-database"></i>
+                                    <i class="fa-brands fa-java"></i>
+                                    <i class="fa-brands fa-js"></i>
+                                    <i class="fa-brands fa-docker"></i>
+                                    <i class="fa-brands fa-git-alt"></i>
+                                    <i class="fa-brands fa-linux"></i>
+                                    <i class="fa-solid fa-server"></i>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-react"></i>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                            </div>
+                        </section>
+                <!-- ABOUT -->
+                        <section class="about" id="about">
+                            <div class="container about-section">
+                                <div class="about-img">
+                                    <img src="./media/pro.png" alt="My dog's avatar">
+                                </div>
+                                <div class="about-text">
+                                    <p class="title">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                        About
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </p>
+                                    <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aliquam reiciendis quasi cum amet asperiores quia omnis odio 
+                                        facilis fugit cumque excepturi doloremque saepe error, neque magnam 
+                                        illo mollitia est, qui culpa repellendus inventore quam dolorum maxime hic? 
+                                        Iusto quae quo repellendus sit veritatis doloribus vitae. Quisquam, labore. 
+                                        Quae, voluptate eum!
+                                    </p>
+                                    <a href="" class="btn">Download CV</a>
+                                </div>
+                            </div>
+                        </section>
+                <!-- PROJECTS -->
+                        <section class="projects" id="projects">
+                            <div class="container projects-section">
+                                <div class="projects-title">
+                                    <p class="title">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                        Projects
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </p>
+                                </div>
+                                <div class="projects-cards">
+                                    <div class="projects-card">
+                                        <img src="./media/projects-img/cine-friend.png" alt="Project Cine Friend Logo" style="width: 100px; height: auto;">
+                                        <p class="title">CineFriend</p>
+                                        <p class="description">HTML, CSS, Javascript and ReactJS</p>
+                                        <div class="project-buttons">
+                                            <a href="https://shorturl.at/YKtDx" target="_blank" class="btn" id="git">GitHub</a>
+                                            <a href="https://cine-friend.netlify.app/" target="_blank" class="btn" id="web">Website</a>
+                                        </div>
+                                    </div>
+                                    <div class="projects-card">
+                                        <img src="./media/projects-img/old-portfolio.png" alt="Old Portfolio Logo" style="width: 100px; height: auto;">
+                                        <p class="title">Old Portfolio</p>
+                                        <p class="description">HTML, CSS, Javascript and ReactJS</p>
+                                        <div class="project-buttons">
+                                            <a href="https://shorturl.at/5VUB4" target="_blank" class="btn" id="git">GitHub</a>
+                                            <a href="https://lime-portfolio.netlify.app/" target="_blank" class="btn" id="web">Website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="projects-button">
+                                    <a href="./projects.html" class="btn">Projects</a>
+                                </div> -->
+                            </div>
+                        </section>
+                <!-- CONTACT -->
+                        <section class="contact" id="contact">
+                            <div class="container contact-section">
+                                <p class="contact-title">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    Contact
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </p>
+                                <div class="contact-form">
+                                    <form action="https://formsubmit.co/d6840677d70235867ff643526028a934" method="POST" class="contact_form">
+                                        <!-- FormSubmit Extra Functionality -->
+                                        <input type="hidden" name="_autoresponse" value="Thank you for your message. I will get back to you as soon as I can! Kind regards, Michalis Karatsioris">
+                                        <input type="text" name="_honey" style="display:none">
+                                        <input type="hidden" name="_next" value="https://www.michaliskaratsioris.com" />
+                                        <input type="hidden" name="_subject" value="[Portfolio] New message!" />
+                                        <!-- FORM -->
+                                        <div class="flex">
+                                            <div class="form_group">
+                                                <input type="text" id="name" name="name" placeholder="Name" required/>
+                                            </div>
+                                            <div class="form_group">
+                                                <input type="email" id="email" name="email" placeholder="@" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form_group">
+                                            <textarea id="message" name="message" rows="30" cols="10" placeholder="Message" required></textarea>
+                                        </div>
+                                        <button class="btn" type="submit">SEND</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                </main>
+        <!-- FOOTER -->
+                <footer>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="1"
+                            d="M0,256L120,234.7C240,213,480,171,720,165.3C960,160,1200,192,1320,208L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+                        </path>
+                    </svg>
+                    <section class="links container">
+                        <ul>
+                            <a href="https://shorturl.at/84jfT" title="LinkedIn profile" target="_blank" alt="LinkedIn profile">
+                                <li>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </li>
+                            </a>
+                            <a href="https://shorturl.at/zgUTi" title="Github profile" target="_blank" alt="Github profile">
+                                <li>
+                                    <i class="fa-brands fa-square-github"></i>
+                                </li>
+                            </a>
+                            <a href="https://shorturl.at/8Z5xu" title="Facebook profile" target="_blank" alt="Facebook profile">
+                                <li>
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </section>
+                </footer>
+        <!-- JS -->
+                <script src="./js/index.js"></script>
+                <script src="https://kit.fontawesome.com/a595256187.js" crossorigin="anonymous"></script>
+    </body>
+</html>

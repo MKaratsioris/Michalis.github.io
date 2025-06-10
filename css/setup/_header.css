@@ -1,0 +1,102 @@
+header .navbar {
+    display: flex; /* this will bring all elements in the same row*/
+    justify-content: space-around; /* elements as far as possible */
+    align-items: center;
+    padding: 2rem 0;
+
+    /* makes it sticky */
+    position: fixed;
+    top: 0px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%;
+    background-color: rgba(256, 257, 257, 0.3);
+    backdrop-filter: blur(7px);
+    z-index: 10;
+}
+header .navbar .logo img {
+    width: 8rem;
+}
+header .destop-navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* this fixes the button extending in all its box */
+}
+header .destop-navbar ul li {
+    padding: 2rem;
+    color: var(--theme-text-dull);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+header .destop-navbar ul li i {
+    padding-left: 1rem;
+    color: var(--theme-color);
+}
+
+/* HAMBURGER MENU */
+header .mobile-navbar {
+    display: none;
+    position: relative;
+    margin-right: 3rem;
+}
+header .mobile-navbar .hamburger {
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: var(--theme-text);
+}
+header .mobile-navbar .mobile-hamburger {
+    position: absolute;
+    right: 9px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-section-bg);
+    padding: 3rem 3rem;
+    border-radius: 7px;
+    box-shadow: 5px 3px 2px rgb(140 152 164 / 15%);
+}
+header .mobile-navbar .mobile-hamburger li {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--theme-text-dull);
+}
+header .mobile-navbar .mobile-hamburger li:hover {
+    cursor: pointer;
+    color: var(--theme-color);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+header .mobile-navbar .mobile-hamburger .btn {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+}
+@media (max-width:992px) {
+    header .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 2rem;
+
+        /* makes it sticky */
+        position: fixed;
+        top: 0px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 100%;
+        background-color: rgba(256, 257, 257, 0.3);
+        backdrop-filter: blur(7px);
+        z-index: 10;
+    }
+    header .navbar .logo img {
+        width: 6rem;
+    }
+    header .destop-navbar {
+        display: none;
+    }
+    header .mobile-navbar {
+        display: block;
+    }
+}

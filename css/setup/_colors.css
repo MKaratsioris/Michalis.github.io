@@ -1,0 +1,24 @@
+:root {
+    --theme-text: #2d3748;
+    --theme-text-dull: #5c6069;
+    --theme-text-long: #718096;
+    --theme-color: #0081EB;
+    --theme-color-hover: #0062B3;
+    --theme-section-bg: #F6F7FC;
+
+    --theme-purple-light-1: #B100E8;
+    --theme-purple-medium-1: #560BAD;
+    --theme-purple-dark-1: #1F1F38;
+    --theme-purple-dark-2: #2C2C6C;
+    --theme-purple-dark-3: #3A0CA3;
+
+    --theme-gray-light: #797988;
+    --theme-gray-medium: #5c6069;
+    --theme-gray-dark: #2d3748;
+
+    --them-blue-light: #0081EB;
+    --theme-blue-medium: #0062B3;
+    --theme-blue-dark-1: #1230AE;
+    --theme-blue-dark-2: #2D00F7;
+}
+

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--theme-text);
+    text-decoration: none; /* cancels out the underlining */
+    list-style: none; /* takes out the bullet from any list */
+}
+html {
+    font-size: 10px;
+}
+html { /* Include this with the JS script */
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 12px;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--theme-color);
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--theme-text);
+}

@@ -1,0 +1,93 @@
+main .projects-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .projects-section .projects-title .title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin-bottom: 2rem;
+}
+main .projects-section .projects-title i {
+    color: var(--theme-color);
+}
+main .projects-section .projects-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
+main .projects-section .projects-cards .projects-card {
+    width: 250px;
+    background-color: #ffffff;
+    margin: 3rem;
+    padding: 2rem 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px rgb(140 152 164 / 13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+main .projects-section .projects-cards .projects-card p {
+    margin-top: 2rem;
+}
+main .projects-section .projects-cards .projects-card .icon {
+    background-color: #0081EB;
+    width: 70px;
+    height: 70px;
+    font-size: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+main .projects-section .projects-cards .projects-card .icon:hover {
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+main .projects-section .projects-cards .projects-card .icon1 {
+    background-color: #D3E7FE;
+}
+main .projects-section .projects-cards .projects-card .icon2 {
+    background-color: #FFF3CC;
+}
+main .projects-section .projects-cards .projects-card .title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+main .projects-section .projects-cards .projects-card .description {
+    font-size: 1.6rem;
+    color: var(--theme-text-long);
+    width: 70%;
+    text-align: center;
+}
+main .projects-section .projects-cards .projects-card .project-buttons {
+    margin: 2rem;
+}
+@media (max-width:580px) {
+    .main .projects-section {
+        margin-top: 20rem;
+        width: 100%;
+    }
+    main .projects-section .projects-title .title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    }
+    main .projects-section .projects-cards .projects-card .project-buttons {
+        margin: 1rem;
+    }
+}
+@media (max-width:480px) {
+    main section.projects {
+        margin-top: 40rem;
+    }
+    main .projects-section .projects-cards {
+        margin: 1rem auto;
+    }
+}

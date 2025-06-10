@@ -1,0 +1,10 @@
+@import url(setup/_links.css);
+@import url(setup/_colors.css);
+@import url(setup/_global.css);
+@import url(setup/_utility.css);
+@import url(setup/_header.css);
+@import url(index/_main_home.css);
+@import url(index/_main_about.css);
+@import url(index/_main_projects.css);
+@import url(index/_main_contact.css);
+@import url(setup/_footer.css);

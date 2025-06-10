@@ -1,0 +1,17 @@
+.container {
+    width: 95%;
+    margin: auto; /* distributes the remaining part of the width/height equally */
+    max-width: 1280px; /* for very big screens */
+}
+.btn {
+    color: white;
+    background-color: var(--theme-color);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.btn:hover {
+    background-color: var(--theme-color-hover);
+    transition: all 0.2s ease-in;
+}

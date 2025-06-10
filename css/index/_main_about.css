@@ -1,0 +1,94 @@
+main .about .about-section {
+    height: 120vh;
+    display: flex;
+    margin: 7rem auto;
+}
+main .about .about-section .about-img {
+    margin: auto; /* brings the img in the center */
+    width: 50%;
+}
+main .about .about-section .about-img img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 20%;
+    margin: 1rem;
+}
+main .about-section .about-text {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+main .about .about-section .about-text .title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin-bottom: 2rem;
+}
+main .about .about-section .about-text .title i {
+    color: var(--theme-color);
+}
+main .about .about-section .about-text .about-description {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+@media (max-width:992px) {
+    main .about {
+        margin: 20rem 0rem;
+    }
+    main .about .about-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "image" "title" "description" "button";
+        gap: 1rem;
+        margin: auto;
+    }
+    main .about .about-section .about-img {
+        grid-area: image;
+    }
+    main .about .about-section .about-img img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20%;
+    }
+    main .about-section .about-text {
+        margin: auto;
+    }
+    main .about .about-section .about-text .title {
+        grid-area: title;
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+    main .about .about-section .about-text .about-description {
+        grid-area: description;
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+        margin: auto;
+    }
+    main .about .about-section .about-text .btn {
+        grid-area: button;
+        margin-top: 2rem;
+        font-size: 1rem;
+        margin: 2rem auto;
+    }
+}
+@media (max-width:768px) {
+    main .about .about-section .about-img img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 20%;
+        margin: 1rem;
+    }
+    main .about .about-section .about-text .title {
+        font-size: 3rem;
+    }
+}
+@media (max-width:480px) {
+    #about {
+        margin-top: 20rem;
+    }
+}

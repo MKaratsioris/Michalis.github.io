@@ -1,0 +1,68 @@
+main .contact .contact-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .contact .contact-section .contact-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin-bottom: 2rem;
+}
+main .contact .contact-section .contact-title i {
+    color: var(--theme-color);
+}
+main .contact .contact-section .contact_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+main .contact .contact-section .form_group {
+    display: flex;
+    flex: 1; /* allow equal width */
+    flex-direction: column;
+}
+main .contact .contact-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+main .contact .contact-section input[type="text"],
+main .contact .contact-section input[type="email"],
+main .contact .contact-section textarea {
+    width: 400px; /* or 100%, or any value you want */
+    max-width: 100%; /* Optional: ensures it doesn't overflow the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+main .contact .contact-section textarea {
+    resize: none;
+    height: 150px;
+}
+@media (max-width:480px) {
+    main .contact .contact-section {
+        margin: 10rem 0;
+    }
+    main .contact .contact-section .contact-title {
+        font-size: 2.5rem;
+    }
+    main .contact .contact-section input[type="text"],
+    main .contact .contact-section input[type="email"],
+    main .contact .contact-section textarea {
+        width: 250px; /* or 100%, or any value you want */
+        max-width: 100%; /* Optional: ensures it doesn't overflow the container */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+}

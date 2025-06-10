@@ -1,0 +1,93 @@
+main .home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .home-section img {
+    width: 20rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+main .home-section .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+main .home-section .home-text i {
+    color: black;
+}
+main .home-section .home-skills {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+        "python java js db docker git linux server react bootstrap html css";
+    gap: 2rem;
+    position: relative;
+}
+main .home-section .home-skills i {
+    font-size: 4rem;
+}
+main .home-section .home-skills i:hover {
+    font-size: 4.5rem;
+}
+main .home-section .home-skills .fa-python {
+    grid-area: python;
+}
+main .home-section .home-skills .fa-database {
+    grid-area: db;
+}
+main .home-section .home-skills .fa-java {
+    grid-area: java;
+}
+main .home-section .home-skills .fa-js {
+    grid-area: js;
+}
+main .home-section .home-skills .fa-html5 {
+    grid-area: html;
+}
+main .home-section .home-skills .fa-css3 {
+    grid-area: css;
+}
+main .home-section .home-skills .fa-react {
+    grid-area: react;
+}
+main .home-section .home-skills .fa-bootstrap {
+    grid-area: bootstrap;
+}
+main .home-section .home-skills .fa-docker {
+    grid-area: docker;
+}
+main .home-section .home-skills .fa-git {
+    grid-area: git;
+}
+main .home-section .home-skills .fa-linux {
+    grid-area: linux;
+}
+main .home-section .home-skills .fa-server {
+    grid-area: server;
+}
+@media (max-width:992px) {
+    main .home-section img {
+        width: 15rem;
+        border-radius: 50%;
+        margin: 1rem;
+    }
+    main .home-section .home-skills {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+                            "python java js db"
+                            "docker git linux server"
+                            "react bootstrap html css";
+        gap: 1.5rem;
+        position: relative;
+    }
+}
